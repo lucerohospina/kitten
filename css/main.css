@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.medium {
+    display: none;
+}
+
+.large {
+    display: none;
+}
+
+@media (min-width: 0) {
+.container {
+    background-image: url('../assets/images/dawn.png');
+    }
+}
+
+@media (min-width: 768px) {
+    .container2 {
+        background-image: url('../assets/images/night.jpg');
+    }
+
+    .medium {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .container3 {
+        background-image: url('../assets/images/sunny-day.jpg');
+    }
+
+    .large {
+        display: block;
+    }
+}
