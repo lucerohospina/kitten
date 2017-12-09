@@ -26,6 +26,14 @@
     .medium {
         display: block;
     }
+
+    .small {
+        display: none;
+    }
+
+    .large {
+        display: none;
+    }
 }
 
 @media (min-width: 992px) {
@@ -35,5 +43,13 @@
 
     .large {
         display: block;
+    }
+
+    .medium {
+        display: none;
+    }
+
+    .small {
+        display: none;
     }
 }
