@@ -4,24 +4,51 @@
     margin: 0;
 }
 
+.small {
+    position: absolute;
+    width: 65%;
+    bottom: 0;
+    left: 18%
+}
+
 .medium {
     display: none;
+    position: absolute;
+    bottom: 1%;
+    left: 25%;
 }
 
 .large {
     display: none;
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+    width: 45%
+}
+
+[class*="container-"] {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position: left;
+    background-size: cover;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
 }
 
 @media (min-width: 0) {
-.container {
+.container-1 {
     background-image: url('../assets/images/dawn.png');
+    /* background-repeat: no-repeat; */
     }
 }
 
 @media (min-width: 768px) {
-    .container2 {
+    .container-2 {
         background-image: url('../assets/images/night.jpg');
-    }
+        /* background-repeat: no-repeat;*/
+    } 
 
     .medium {
         display: block;
@@ -37,8 +64,9 @@
 }
 
 @media (min-width: 992px) {
-    .container3 {
+    .container-3 {
         background-image: url('../assets/images/sunny-day.jpg');
+        /* background-repeat: no-repeat; */
     }
 
     .large {
